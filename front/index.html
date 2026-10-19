@@ -3,21 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRM</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>CRM — Clients</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <h2 id="hello">Hello from le front, Aymane Azzakhnini</h2>
-      <p id="test-message" class="test-message"></p>
-
-      <h1>CRM — Clients</h1>
-      <p id="status" class="status"></p>
+      <h1>Clients</h1>
+      <p id="status" role="status"></p>
 
       <form id="client-form">
-        <input id="nom" name="nom" placeholder="Nom" required />
-        <input id="email" name="email" type="email" placeholder="Email" required />
-        <input id="telephone" name="telephone" placeholder="Téléphone" />
+        <input name="nom" placeholder="Nom" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <input name="telephone" placeholder="Téléphone" />
         <button type="submit">Ajouter</button>
       </form>
 
@@ -33,7 +30,6 @@
         <tbody id="clients"></tbody>
       </table>
     </main>
-
-    <script src="./js/app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
